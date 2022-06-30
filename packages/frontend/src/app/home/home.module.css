@@ -1,7 +1,29 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+    align-content: center;
+    flex-direction: column;
+    padding: 48px;
+}
+.container>h1{
+    color: #eb038c;
+    font-size: 5em;
+    margin: 8px
+}
+.container>p{
+    color: var(--text-color);
+    font-size: 2em;
+    margin: 8px 25vw
+}
+.container>p>em{
+    font-style: normal;
+    font-weight: bold;
+}
+.search{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1)    ;
+}
