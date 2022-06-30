@@ -1,4 +1,9 @@
-.container{
-    height:48px;
-    border-bottom: 1px solid #EEEEEE;
+.nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav > ul > li {
+  padding: 8px;
 }

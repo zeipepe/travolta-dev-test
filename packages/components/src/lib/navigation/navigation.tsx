@@ -3,13 +3,17 @@ import styles from './navigation.module.css';
 
 /* eslint-disable-next-line */
 export interface NavigationProps {
-  children?: ReactNode;
+  elements?: ReactNode[];
 }
 
-export function Navigation({children}: NavigationProps) {
+export function Navigation({elements}: NavigationProps) {
   return (
-    <nav className={styles['container']}>
-      {children}
+    <nav className={styles['nav']}>
+      {elements&&<ul>
+        {elements.map(element=>(
+          <li>{element}</li>
+        ))}
+      </ul>}
     </nav>
   );
 }

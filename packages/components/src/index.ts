@@ -1,3 +1,5 @@
+export * from './lib/header/header';
+export * from './lib/hotel-search/hotel-search';
 export * from './lib/date-picker/date-picker';
 export * from './lib/destination-selector/destination-selector';
 export * from './lib/hotel-list/hotel-list';
