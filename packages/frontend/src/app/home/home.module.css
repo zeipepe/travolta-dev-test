@@ -15,8 +15,9 @@
 }
 .container>p{
     color: var(--text-color);
-    font-size: 2em;
-    margin: 8px 25vw
+    font-size: 1.8em;
+    margin: 8px auto;
+    width: 50vw;
 }
 .container>p>em{
     font-style: normal;

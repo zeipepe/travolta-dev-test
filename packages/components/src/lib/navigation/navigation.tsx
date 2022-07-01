@@ -10,8 +10,8 @@ export function Navigation({elements}: NavigationProps) {
   return (
     <nav className={styles['nav']}>
       {elements&&<ul>
-        {elements.map(element=>(
-          <li>{element}</li>
+        {elements.map((element,index)=>(
+          <li key={`navItem-${index}`}>{element}</li>
         ))}
       </ul>}
     </nav>

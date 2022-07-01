@@ -1,6 +1,5 @@
-import { Navigation, Header } from '@travolta-test-dev/components';
+import { Header } from '@travolta-test-dev/components';
 import { Link, Outlet } from 'react-router-dom';
-import styles from './layout.module.css';
 
 /* eslint-disable-next-line */
 export interface LayoutProps {}

@@ -7,7 +7,7 @@ import Layout from './layout/layout';
 export function App() {
   return (
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route element={<Layout/>}>
           <Route path="*" element={<Home />} />
           <Route path="destinations" element={<Destinations />} />
         </Route>

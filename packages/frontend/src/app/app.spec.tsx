@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
+import { createMemoryHistory } from 'history';
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Router } from 'react-router-dom';
 
 import App from './app';
 
@@ -15,13 +16,16 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have the main text', () => {
+    const history = createMemoryHistory();
+    const route = '/';
+    history.push(route)
     const { getByText } = render(
-      <BrowserRouter>
+      <Router location={history.location} navigator={history}>
         <App />
-      </BrowserRouter>
+      </Router>
     );
 
-    expect(getByText(/Welcome frontend/gi)).toBeTruthy();
+    expect(getByText(/We love to travel as much as you do/gi)).toBeTruthy();
   });
 });
